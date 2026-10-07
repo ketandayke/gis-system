@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Southern Hemisphere Test</name>
+    <Placemark>
+      <name>Sydney Opera House Area</name>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              151.214,-33.857,0 151.216,-33.857,0 151.216,-33.855,0 151.214,-33.855,0 151.214,-33.857,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

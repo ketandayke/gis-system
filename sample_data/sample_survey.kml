@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bengaluru Survey Test Layer</name>
+
+    <!-- 1. Polygon Feature (Should calculate Area) -->
+    <Placemark>
+      <name>Site Boundary Alpha</name>
+      <description>Solar plant boundary polygon</description>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5900,12.9700,0
+              77.5950,12.9700,0
+              77.5950,12.9750,0
+              77.5900,12.9750,0
+              77.5900,12.9700,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- 2. LineString Feature (Should calculate Length) -->
+    <Placemark>
+      <name>Inspection Flight Path</name>
+      <description>Drone corridor line</description>
+      <LineString>
+        <extrude>1</extrude>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>
+          77.5850,12.9650,0
+          77.5890,12.9680,0
+          77.5920,12.9720,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- 3. Point Feature (Should be handled gracefully as NOT_APPLICABLE) -->
+    <Placemark>
+      <name>Ground Control Point 1</name>
+      <description>Survey base marker</description>
+      <Point>
+        <coordinates>77.5910,12.9715,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>
